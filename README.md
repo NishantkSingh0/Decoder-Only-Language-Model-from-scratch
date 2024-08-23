@@ -47,7 +47,7 @@ The learning rate is calculated using a cosine decay function after the warmup p
 
 
 # Achievements
-__i. Custom Transformer Decoder:__ Designed and implemented a Transformer-based language model with a focus on understanding and generating text.
-__ii. Advanced Tokenization:__ Integrated SentencePiece with BPE for efficient vocabulary management and improved handling of rare words.
-__iii. Robust Training:__ Achieved stable and effective training using a warmup learning rate schedule, enhancing the model's generalization capabilities.
-__iv. Scalable Dataset:__ Managed and processed a large dataset of 50,000 paragraphs, ensuring high-quality input for the language model.
+__i. Custom Transformer Decoder:__ Designed and implemented a Transformer-based language model with a focus on understanding and generating text.   
+__ii. Advanced Tokenization:__ Integrated SentencePiece with BPE for efficient vocabulary management and improved handling of rare words.   
+__iii. Robust Training:__ Achieved stable and effective training using a warmup learning rate schedule, enhancing the model's generalization capabilities.   
+__iv. Scalable Dataset:__ Managed and processed a large dataset of 50,000 paragraphs, ensuring high-quality input for the language model.   
