@@ -27,9 +27,9 @@ The model employs dropout with a rate of 0.25 to prevent overfitting.
 ### Dataset Preparation
 The dataset consists of 50,000 paragraphs, carefully filtered to remove irrelevant or noisy content. The paragraphs were standardized to a fixed sequence length of 300 tokens, ensuring consistency across the training data. This involved the following steps:
 
-__i. Cleaning:__ Removing unnecessary symbols, special characters, and noise.  
-__ii. Tokenization:__ Each paragraph was tokenized using SentencePiece with BPE, producing a sequence of integer tokens.  
-__iii. Padding and Truncation:__ Paragraphs shorter than 300 tokens were padded with zeros, while longer paragraphs were truncated to exactly 300 tokens.  
+__● Cleaning:__ Removing unnecessary symbols, special characters, and noise.  
+__● Tokenization:__ Each paragraph was tokenized using SentencePiece with BPE, producing a sequence of integer tokens.  
+__● Padding and Truncation:__ Paragraphs shorter than 300 tokens were padded with zeros, while longer paragraphs were truncated to exactly 300 tokens.  
 #### The dataset is balanced and highly relevant to the language modeling task, making it ideal for training robust language models.  
 ### Sample:
 The 4K PS4 might be officially announced soon. The existence of the upgraded version of Sony\'s console was previously reported by Kotaku, and today The Wall Street Journal reports that the device is expected to be officially unveiled before the October launch of PlayStation VR. As with the previous report, the WSJ says that the beefed-up version of the console will support 4K graphics as well as provide extra power for the PSVR virtual reality add-on. The new PS4 is expected to include both an upgraded processor and GPU, and the WSJ says that it\'s likely that both versions of the console will share an identical software catalog. There are no details on when it might launch or how much it will cost.\n\nThis type of mid-cycle upgrade for a console isn\'t exactly common, but Microsoft has hinted that it could do something similar for the Xbox One, with Xbox chief Phil Spencer predicting that consoles could eventually resemble PCs in this regard. "When you look at the console space, I believe we will see more hardware innovation in the console space than we\'ve ever seen," he explained. While both Sony and Microsoft could potentially release new, slightly upgraded versions of their consoles, competitor Nintendo is going in a more traditional direction with a brand new device codenamed NX, that will replace the Wii U and is expected to be unveiled some time this year.\n\nHands-on with the PlayStation VR ...
@@ -47,7 +47,7 @@ The learning rate is calculated using a cosine decay function after the warmup p
 
 
 # Achievements
-__i. Custom Transformer Decoder:__ Designed and implemented a Transformer-based language model with a focus on understanding and generating text.   
-__ii. Advanced Tokenization:__ Integrated SentencePiece with BPE for efficient vocabulary management and improved handling of rare words.   
-__iii. Robust Training:__ Achieved stable and effective training using a warmup learning rate schedule, enhancing the model's generalization capabilities.   
-__iv. Scalable Dataset:__ Managed and processed a large dataset of 50,000 paragraphs, ensuring high-quality input for the language model.   
+__● Custom Transformer Decoder:__ Designed and implemented a Transformer-based language model with a focus on understanding and generating text.   
+__● Advanced Tokenization:__ Integrated SentencePiece with BPE for efficient vocabulary management and improved handling of rare words.   
+__● Robust Training:__ Achieved stable and effective training using a warmup learning rate schedule, enhancing the model's generalization capabilities.   
+__● Scalable Dataset:__ Managed and processed a large dataset of 50,000 paragraphs, ensuring high-quality input for the language model.   
