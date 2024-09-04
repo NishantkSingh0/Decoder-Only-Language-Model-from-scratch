@@ -5,7 +5,7 @@ This repository contains a custom-built language model trained on over 400,000 c
 The model utilizes a custom Transformer decoder architecture, featuring:
 
 * ### Tokenization and Padding:  
-   Tokenization is handled by SentencePiece using BPE, optimizing vocabulary size while retaining semantic integrity. Each paragraph is tokenized into sequences of integers, padded to a fixed length of 300 tokens.
+   Tokenization is handled by SentencePiece using BPE, optimizing vocabulary size while retaining semantic integrity. Each paragraph is tokenized into sequences of integers, padded to a fixed length of 100 tokens.
 
 * ### Embedding: 
    Tokens are mapped to dense vectors of dimension 204 (d_model=204) via an embedding layer, followed by positional encoding to capture sequential token relationships.
@@ -14,7 +14,7 @@ The model utilizes a custom Transformer decoder architecture, featuring:
    The model employs multi-head attention with 6 heads (num_heads=6), each processing a depth of 34 (d_model/num_heads). This allows the model to simultaneously focus on various parts of the input sequence.
 
 * ### Pointwise Feed-Forward Network (PFFN): 
-   The PFFN comprises two dense layers, with the first expanding dimensionality to 256 (dff=256) followed by ReLU activation, and the second projecting back to 20 (d_model=20), enabling complex input transformations.
+   The PFFN comprises two dense layers, with the first expanding dimensionality to 512 (dff=512) followed by ReLU activation, and the second projecting back to 204 (d_model=204), enabling complex input transformations.
 
 * ### Decoder Layers:
    The architecture includes 8 decoder layers (num_layers=8), each incorporating multi-head attention and a PFFN, with residual connections and normalization enhancing model stability and performance.
