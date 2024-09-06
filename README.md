@@ -4,6 +4,8 @@ This repository contains a custom-built language model trained on over 400,000 c
 # Model Architecture
 The model utilizes a custom Transformer decoder architecture, featuring:
 
+![Screenshot (152)](https://github.com/user-attachments/assets/37f34175-9b13-4416-83d2-31cee95f2849)
+
 * ### Tokenization and Padding:  
    Tokenization is handled by SentencePiece using BPE, optimizing vocabulary size while retaining semantic integrity. Each paragraph is tokenized into sequences of integers, padded to a fixed length of 100 tokens.
 
